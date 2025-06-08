@@ -1,144 +1,56 @@
+import React from 'react';
 import './App.css';
 
 function App() {
   return (
     <div className='app'>
-      {/* Header */}
+      {/* Header Section */}
       <header className='header'>
-        <div className='logo'>
-          <span>📚 Matu-Prep</span>
-        </div>
-        <div className='header-buttons'>
-          <button className='sign-in'>Sign In</button>
-          <button className='start-learning'>Start learning</button>
+        <div className='header-content'>
+          <div className='logo'>
+            <span className='logo-icon'>🎓</span>
+            <span className='logo-text'>Matu-Prep</span>
+          </div>
+          <div className='header-actions'>
+            <button className='sign-in-btn'>Sign in</button>
+            <button className='start-learning-btn'>Start learning</button>
+          </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className='hero'>
-        <div className='book-icon'>📖</div>
-        <h1>Enhance your Maturité preparation</h1>
-      </section>
-
-      {/* Features Section */}
-      <section className='features'>
-        <div className='feature'>
-          <div className='feature-icon'>🔍</div>
-          <h3>Gain access to all chapters</h3>
-          <p>
-            You will never miss a subject! Every test a chapter to revise using
-            latest news
-          </p>
+      <main className='hero'>
+        <div className='hero-content'>
+          <div className='hero-icon'>
+            <svg
+              width='120'
+              height='120'
+              viewBox='0 0 120 120'
+              fill='none'
+              xmlns='http://www.w3.org/2000/svg'
+            >
+              <path
+                d='M20 25C20 22.7909 21.7909 21 24 21H56C58.2091 21 60 22.7909 60 25V95C60 97.2091 58.2091 99 56 99H24C21.7909 99 20 97.2091 20 95V25Z'
+                fill='currentColor'
+              />
+              <path
+                d='M60 25C60 22.7909 61.7909 21 64 21H96C98.2091 21 100 22.7909 100 25V95C100 97.2091 98.2091 99 96 99H64C61.7909 99 60 97.2091 60 95V25Z'
+                fill='currentColor'
+              />
+              <path
+                d='M60 21V99'
+                stroke='currentColor'
+                strokeWidth='2'
+              />
+            </svg>
+          </div>
+          <h1 className='hero-title'>
+            Enhance your Maturité
+            <br />
+            preparation
+          </h1>
         </div>
-
-        <div className='feature'>
-          <div className='feature-icon'>👥</div>
-          <h3>Ability to view past students' revision sheets</h3>
-          <p>
-            You can learn access to past failure papers and find out what went
-            wrong to improve yourself
-          </p>
-        </div>
-
-        <div className='feature'>
-          <div className='feature-icon'>🔥</div>
-          <h3>Effective learning experience</h3>
-          <p>Keep all of your study materials all in one place</p>
-        </div>
-
-        <div className='feature'>
-          <div className='feature-icon'>📄</div>
-          <h3>Full access to all past exam papers</h3>
-          <p>
-            Review past exam papers and stay on track to reach your goals well
-          </p>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className='testimonials'>
-        <h2>Join Matu-Prep community with your fellow students</h2>
-        <div className='testimonials-grid'>
-          <div className='testimonial'>
-            <blockquote>I feel more prepared and confident.</blockquote>
-          </div>
-          <div className='testimonial'>
-            <blockquote>
-              This platform boosted my exam performance. Highly
-            </blockquote>
-          </div>
-          <div className='testimonial'>
-            <blockquote>Learning made effective</blockquote>
-          </div>
-          <div className='testimonial'>
-            <blockquote>Confidence and focus for exam success</blockquote>
-          </div>
-        </div>
-      </section>
-
-      {/* Subscription Section */}
-      <section className='subscription'>
-        <h2>Get your subscription now!</h2>
-        <div className='pricing-card'>
-          <div className='pricing-header'>
-            <span className='pricing-icon'>💎</span>
-            <h3>All In One</h3>
-            <div className='price'>CHF 10/ month</div>
-          </div>
-          <ul className='features-list'>
-            <li>✓ Unlimited access to past papers</li>
-            <li>✓ Corrections, lessons, revision sheets</li>
-            <li>✓ Interactive learning resources</li>
-          </ul>
-          <button className='subscribe-button'>Subscribe now</button>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className='footer'>
-        <div className='footer-content'>
-          <div className='footer-section'>
-            <img
-              src='/logo.png'
-              alt='Matu-prep'
-              className='footer-logo'
-            />
-          </div>
-          <div className='footer-section'>
-            <h4>About us</h4>
-            <ul>
-              <li>About Us</li>
-              <li>Subscriptions</li>
-            </ul>
-          </div>
-          <div className='footer-section'>
-            <h4>Support</h4>
-            <ul>
-              <li>Customer service</li>
-              <li>FAQ</li>
-              <li>Help</li>
-            </ul>
-          </div>
-          <div className='footer-section'>
-            <h4>Join the community</h4>
-            <ul>
-              <li>Instagram</li>
-            </ul>
-          </div>
-        </div>
-
-        {/* Newsletter */}
-        <div className='newsletter'>
-          <h4>Stay Updated with Our Newsletter</h4>
-          <div className='newsletter-form'>
-            <input
-              type='email'
-              placeholder='Enter your email'
-            />
-            <button>Subscribe</button>
-          </div>
-        </div>
-      </footer>
+      </main>
     </div>
   );
 }
