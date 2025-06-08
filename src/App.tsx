@@ -50,6 +50,32 @@ function App() {
           </h1>
         </div>
       </main>
+
+      {/* Features Section */}
+      <section className="features">
+        <div className="features-grid">
+          <div className="feature">
+            <div className="feature-icon">🔍</div>
+            <h3>Gain access to all chapters</h3>
+            <p>You will never worry again about having lost a chapter or not having taken notes</p>
+          </div>
+          <div className="feature">
+            <div className="feature-icon">👥</div>
+            <h3>Ability to view past students' revision sheets</h3>
+            <p>You can have access to past revision sheets and not be bothered making new ones yourself</p>
+          </div>
+          <div className="feature">
+            <div className="feature-icon">🔥</div>
+            <h3>Effective learning experience</h3>
+            <p>Have all of your study materials all in one place</p>
+          </div>
+          <div className="feature">
+            <div className="feature-icon">⬇️</div>
+            <h3>Full access to all past exam papers</h3>
+            <p>Review past exam papers and their corrections to better prepare yourself</p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
